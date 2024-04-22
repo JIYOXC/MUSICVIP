@@ -32,7 +32,7 @@ def track_markup(_, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴍᴏʀᴇ ๏",
+                text="๏ درباره ๏",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
         ],
@@ -74,25 +74,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
 
         [
             InlineKeyboardButton(
-                text="II ᴘᴀᴜsᴇ",
+                text="II مکث",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
 
             InlineKeyboardButton(
-                text="▢ sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢ متوقف", callback_data=f"ADMIN Stop|{chat_id}"
             ),
 
             InlineKeyboardButton(
-                text="sᴋɪᴘ ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="بعدی ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
         ],
         [
-            InlineKeyboardButton(text="▷ ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="▷ از سرگیری", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="بازپخش ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ғᴇᴀᴛᴜʀᴇs ๏",
+                text="๏ ویژگی ها ๏",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
         ],
@@ -113,27 +113,27 @@ def stream_markup(_, videoid, chat_id):
 
         [
             InlineKeyboardButton(
-                text= "✚ ᴘʟᴀʏʟɪsᴛ",
+                text= "✚ پلی لیست",
                 callback_data=f"vip_playlist {videoid}"
             ),
         
         
             InlineKeyboardButton(
-                text="ᴄᴏɴᴛʀᴏʟs ♻",
+                text="کنترل ♻",
                 callback_data=f"Pages Back|3|{videoid}|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text= "📥 ᴠɪᴅᴇᴏ",
+                text= "📥 ویدیو",
                 callback_data=f"downloadvideo {videoid}"),
             InlineKeyboardButton(
-                text= "📥 ᴀᴜᴅɪᴏ",
+                text= "📥 موزیک",
                 callback_data=f"downloadaudio {videoid}")
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴀᴅᴠᴀɴᴄᴇ ๏",
+                text="๏ پیشرفته ๏",
                 callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
             ),
         ],
@@ -238,7 +238,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text= "Next",
+                text= "بعدی",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
@@ -263,25 +263,25 @@ def queue_markup(_, videoid, chat_id):
 
         [
             InlineKeyboardButton(
-                text="II ᴘᴀᴜsᴇ",
+                text="مکث دوم",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
 
             InlineKeyboardButton(
-                text="▢ sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢ متوقف", callback_data=f"ADMIN Stop|{chat_id}"
             ),
 
             InlineKeyboardButton(
-                text="sᴋɪᴘ ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="بعدی ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
         ],
         [
-            InlineKeyboardButton(text="▷ ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="▷ از سرگیری", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="بازپخش ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴍᴏʀᴇ ๏",
+                text="๏ درباره ๏",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
         ],
@@ -375,11 +375,11 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🎧 sᴜғғʟᴇ",
+                text="🎧 suffle",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="ʟᴏᴏᴘ ↺", callback_data=f"ADMIN Loop|{chat_id}"
+                text="حلقه ↺", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
@@ -394,11 +394,11 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʜᴏᴍᴇ ๏",
+                text="๏ خانه ๏",
                 callback_data=f"Pages Back|2|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="๏ ɴᴇxᴛ ๏",
+                text="๏ بعدی ๏",
                 callback_data=f"Pages Forw|2|{videoid}|{chat_id}",
             ),
         ],
@@ -440,7 +440,7 @@ def panel_markup_2(_, videoid, chat_id):
             ],
         [
             InlineKeyboardButton(
-                text="๏ ʙᴀᴄᴋ ๏",
+                text="๏ بازگشت ๏",
                 callback_data=f"Pages Back|1|{videoid}|{chat_id}",
             ),
         ],
@@ -457,22 +457,22 @@ def panel_markup_5(_, videoid, chat_id):
             ),
         ],
         [
-            InlineKeyboardButton(text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="مکث", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="متوقف", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="بعدی", callback_data=f"ADMIN Skip|{chat_id}"),
 
         ],
         [
-            InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="از سرگیری", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="بازپخش", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʜᴏᴍᴇ ๏",
+                text="๏ خانه ๏",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="๏ ɴᴇxᴛ ๏",
+                text="๏ بعدی ๏",
                 callback_data=f"Pages Forw|1|{videoid}|{chat_id}",
             ),
         ],
@@ -508,7 +508,7 @@ def panel_markup_3(_, videoid, chat_id):
             ],
         [
             InlineKeyboardButton(
-                text="ʙᴀᴄᴋ",
+                text="بازگشت",
                 callback_data=f"Pages Back|2|{videoid}|{chat_id}",
             ),
         ],
@@ -546,25 +546,25 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="II ᴘᴀᴜsᴇ",
+                text="مکث دوم",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
 
             InlineKeyboardButton(
-                text="▢ sᴛᴏᴘ ▢", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢ متوقف ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
 
             InlineKeyboardButton(
-                text="sᴋɪᴘ ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="بعدی ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
         ],
         [
-            InlineKeyboardButton(text="▷ ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="▷ از سرگیری", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="بازگشت ↺", callback_data=f"ADMIN Replay|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʜᴏᴍᴇ ๏",
+                text="๏ خانه ๏",
                 callback_data=f"MainMarkup {vidid}|{chat_id}",
             ),
         ],
