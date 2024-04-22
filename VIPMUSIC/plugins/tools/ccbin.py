@@ -25,7 +25,7 @@ async def check_ccbin(client, message):
         user_command_count[user_id] = user_command_count.get(user_id, 0) + 1
         if user_command_count[user_id] > SPAM_THRESHOLD:
             # Block the user if they exceed the threshold
-            hu = await message.reply_text(f"**{message.from_user.mention} ᴘʟᴇᴀsᴇ ᴅᴏɴᴛ ᴅᴏ sᴘᴀᴍ, ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 5 sᴇᴄ**")
+            hu = await message.reply_text(f"**{message.from_user.mention} لطفا اسپم نکنید و بعد از 5 ثانیه دوباره امتحان بکنید**")
             await asyncio.sleep(3)
             await hu.delete()
             return 
@@ -36,31 +36,31 @@ async def check_ccbin(client, message):
 
     if len(message.command) < 2:
         return await message.reply_text(
-            "<b>Please Give Me a Bin To\nGet Bin Details !</b>"
+            "<b>لطفاً یک سطل به من بدهید تا\nجزئیات سطل را دریافت کنم !</b>"
         )
     try:
         await message.delete()
     except:
         pass
-    aux = await message.reply_text("<b>Checking ...</b>")
+    aux = await message.reply_text("<b>درحال چک کردن ...</b>")
     bin = message.text.split(None, 1)[1]
     if len(bin) < 6:
-        return await aux.edit("<b>❌ Wrong Bin❗...</b>")
+        return await aux.edit("<b>❌ سطل اشتباه❗...</b>")
     try:
         resp = await api.bininfo(bin)
         await aux.edit(f"""
 <b>💠 Bin Full Details:</b>
 
-<b>🏦 Bank:</b> <tt>{resp.bank}</tt>
-<b>💳 Bin:</b> <tt>{resp.bin}</tt>
-<b>🏡 Country:</b> <tt>{resp.country}</tt>
-<b>🇮🇳 Flag:</b> <tt>{resp.flag}</tt>
+<b>🏦 بانک:</b> <tt>{resp.bank}</tt>
+<b>💳 سطل:</b> <tt>{resp.bin}</tt>
+<b>🏡 کشور:</b> <tt>{resp.country}</tt>
+<b>🇮🇳 پرچم:</b> <tt>{resp.flag}</tt>
 <b>🧿 ISO:</b> <tt>{resp.iso}</tt>
-<b>⏳ Level:</b> <tt>{resp.level}</tt>
-<b>🔴 Prepaid:</b> <tt>{resp.prepaid}</tt>
-<b>🆔 Type:</b> <tt>{resp.type}</tt>
-<b>ℹ️ Vendor:</b> <tt>{resp.vendor}</tt>"""
+<b>⏳ لول:</b> <tt>{resp.level}</tt>
+<b>🔴 پیش پرداخت شده:</b> <tt>{resp.prepaid}</tt>
+<b>🆔 تایپ:</b> <tt>{resp.type}</tt>
+<b>ℹ️ فروشنده:</b> <tt>{resp.vendor}</tt>"""
         )
     except:
         return await aux.edit(f"""
-🚫 BIN not recognized. Please enter a valid BIN.""")
+🚫 BIN شناسایی نشد. لطفا یک BIN معتبر وارد کنید.""")
