@@ -49,7 +49,7 @@ async def handle_refresh_logs(_, query: CallbackQuery):
         carbon_image = await make_carbon(logs_content)
 
         # Edit the original message with the new carbon image
-        await query.message.edit_photo(carbon_image, caption="**🥀ᴛʜɪs ɪs ɴᴇᴡ ʀᴇғʀᴇsʜᴇᴅ ʟᴏɢs✨**")
+        await query.message.edit_photo(carbon_image, caption="**🥀این لاگ های تازه تازه شده است✨**")
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -66,11 +66,11 @@ async def log_(client, message, _):
         carbon_image = await make_carbon(logs_content)
         
         # Create an inline keyboard with a refresh button
-        refresh_button = InlineKeyboardButton("🥀ʀᴇғʀᴇsʜ✨", callback_data="refresh_logs")
+        refresh_button = InlineKeyboardButton("🥀رفرش✨", callback_data="refresh_logs")
         keyboard = InlineKeyboardMarkup([[refresh_button]])
 
         # Reply to the message with the carbon image and the inline keyboard
-        await message.reply_photo(carbon_image, caption="**🥀ᴛʜɪs ɪs ʏᴏᴜʀ ʟᴏɢs✨**", reply_markup=keyboard)
+        await message.reply_photo(carbon_image, caption="**🥀اطلاعات شما✨**", reply_markup=keyboard)
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -112,13 +112,13 @@ async def update_(client, message, _):
         "tsnrhtdd"[(format // 10 % 10 != 1) * (format % 10 < 4) * format % 10 :: 4],
     )
     for info in repo.iter_commits(f"HEAD..origin/{config.UPSTREAM_BRANCH}"):
-        updates += f"<b>➣ #{info.count()}: <a href={REPO_}/commit/{info}>{info.summary}</a> ʙʏ -> {info.author}</b>\n\t\t\t\t<b>➥ ᴄᴏᴍᴍɪᴛᴇᴅ ᴏɴ :</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
-    _update_response_ = "<b>ᴀ ɴᴇᴡ ᴜᴩᴅᴀᴛᴇ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴛʜᴇ ʙᴏᴛ !</b>\n\n➣ ᴩᴜsʜɪɴɢ ᴜᴩᴅᴀᴛᴇs ɴᴏᴡ\n\n<b><u>ᴜᴩᴅᴀᴛᴇs:</u></b>\n\n"
+        updates += f"<b>➣ #{info.count()}: <a href={REPO_}/commit/{info}>{info.summary}</a> توسط -> {info.author}</b>\n\t\t\t\t<b>➥ متعهد شده است :</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
+    _update_response_ = "<b>یک آپدیت جدید برای ربات در دسترس است !</b>\n\n➣ فشار دادن به روز رسانی در حال حاضر\n\n<b><u>اپدیت ها:</u></b>\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
         url = await VIPBin(updates)
         nrs = await response.edit(
-            f"<b>ᴀ ɴᴇᴡ ᴜᴩᴅᴀᴛᴇ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴛʜᴇ ʙᴏᴛ !</b>\n\n➣ ᴩᴜsʜɪɴɢ ᴜᴩᴅᴀᴛᴇs ɴᴏᴡ\n\n<u><b>ᴜᴩᴅᴀᴛᴇs :</b></u>\n\n<a href={url}>ᴄʜᴇᴄᴋ ᴜᴩᴅᴀᴛᴇs</a>"
+            f"<b>یک آپدیت جدید برای ربات در دسترس است !</b>\n\n➣ فشار دادن به روز رسانی در حال حاضر\n\n<u><b>اپدیت ها :</b></u>\n\n<a href={url}>چک اپدیت ها</a>"
         )
     else:
         nrs = await response.edit(_final_updates_, disable_web_page_preview=True)
@@ -166,7 +166,7 @@ async def restart_(_, message):
         try:
             await app.send_message(
                 chat_id=int(x),
-                text=f"{app.mention} ɪs ʀᴇsᴛᴀʀᴛɪɴɢ...\n\nʏᴏᴜ ᴄᴀɴ sᴛᴀʀᴛ ᴩʟᴀʏɪɴɢ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 15-20 sᴇᴄᴏɴᴅs.",
+                text=f"{app.mention} درحال ریستارت شدن...\n\nشما میتوانید استارت بکنید بعد از 15-20 ثانیه.",
             )
             await remove_active_chat(x)
             await remove_active_video_chat(x)
@@ -180,6 +180,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit_text(
-        "» ʀᴇsᴛᴀʀᴛ ᴘʀᴏᴄᴇss sᴛᴀʀᴛᴇᴅ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ sᴛᴀʀᴛs..."
+        "» فرآیند راه اندازی مجدد آغاز شد, لطفا چند ثانیه صبر کنید تا ربات شروع شود..."
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
