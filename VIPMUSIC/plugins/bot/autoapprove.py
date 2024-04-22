@@ -78,7 +78,7 @@ font_path = "VIPMUSIC/assets/hiroko.ttf"
 chat_id_env = environ.get("CHAT_ID")
 CHAT_ID = [int(app) for app in chat_id_env.split(",")] if chat_id_env else []
 
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "**❅─────✧❅✦❅✧─────❅**\n**🥀ʜᴇʏ {mention}**\n\n**🏓ᴡᴇʟᴄᴏᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ✨**\n\n**➻** {title}\n\n**💞ɴᴏᴡ ᴍᴀᴋᴇ ɴᴇᴡ ғʀɪᴇɴᴅs ᴀɴᴅ sᴛᴀʏ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ🥳**\n**❅─────✧❅✦❅✧─────❅**")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "**❅─────✧❅✦❅✧─────❅**\n**🥀سلام {mention}**\n\n**🏓به گروه جدید خوش امدی✨**\n\n**➻** {title}\n\n**💞حالا میتونی دوستان جدید پیدا بکنی که تو گروه همیشه انلاین هستن🥳**\n**❅─────✧❅✦❅✧─────❅**")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # List of random photo links
@@ -120,7 +120,7 @@ async def autoapprove(client: app, message: ChatJoinRequest):
                     [
                         [
                             InlineKeyboardButton(
-                                "🌱ᴡᴇʟᴄᴏᴍᴇ ᴅᴇᴀʀ🌱", url=f"https://t.me/{app.username}?startgroup=true"
+                                "🌱خوش آمدی عزیزم🌱", url=f"https://t.me/{app.username}?startgroup=true"
                             )
                         ]
                     ]
