@@ -15,13 +15,13 @@ async def give_link_command(client, message):
     # Generate an invite link for the chat where the command is used
     chat = message.chat.id
     link = await app.export_chat_invite_link(chat)
-    await message.reply_text(f"Here's the invite link for this chat:\n{link}")
+    await message.reply_text(f"این لینک دعوت برای این چت است:\n{link}")
 
 
 @app.on_message(filters.command(["link", "invitelink"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & SUDOERS)
 async def link_command_handler(client: Client, message: Message):
     if len(message.command) != 2:
-        await message.reply("Invalid usage. Correct format: /link group_id")
+        await message.reply("استفاده نامعتبر فرمت صحیح: /link group_id")
         return
 
     group_id = message.command[1]
@@ -31,7 +31,7 @@ async def link_command_handler(client: Client, message: Message):
         chat = await client.get_chat(int(group_id))
 
         if chat is None:
-            await message.reply("Unable to get information for the specified group ID.")
+            await message.reply("دریافت اطلاعات برای شناسه گروه مشخص شده ممکن نیست.")
             return
 
         try:
@@ -63,7 +63,7 @@ async def link_command_handler(client: Client, message: Message):
         await client.send_document(
             chat_id=message.chat.id,
             document=file_name,
-            caption=f"𝘏𝘦𝘳𝘦 𝘐𝘴 𝘵𝘩𝘦 𝘐𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘍𝘰𝘳\n{chat.title}\n𝘛𝘩𝘦 𝘎𝘳𝘰𝘶𝘱 𝘐𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘚𝘤𝘳𝘢𝘱𝘦𝘥 𝘉𝘺 : @{app.username}"
+            caption=f"در اینجا اطلاعات برای\n{chat.title}\nاطلاعات گروه خراشیده شده توسط : @{app.username}"
         )
 
     except Exception as e:
