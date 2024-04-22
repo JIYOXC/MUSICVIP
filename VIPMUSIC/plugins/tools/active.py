@@ -26,7 +26,7 @@ def ordinal(n):
 
 @app.on_message(filters.command(["activevc", "activevoice"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & SUDOERS)
 async def activevc(_, message: Message):
-    mystic = await message.reply_text("» ɢᴇᴛᴛɪɴɢ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ʟɪsᴛ...")
+    mystic = await message.reply_text("» دریافت لیست چت های صوتی فعال...")
     served_chats = await get_active_chats()
     text = ""
     j = 0
@@ -51,10 +51,10 @@ async def activevc(_, message: Message):
         except:
             continue
     if not text:
-        await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+        await mystic.edit_text(f"» هیچ چت صوتی فعالی روشن نیست {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs :</b>\n\n{text}",
+            f"<b>» لیست چت های صوتی فعال در حال حاضر :</b>\n\n{text}",
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
         )
@@ -62,7 +62,7 @@ async def activevc(_, message: Message):
 
 @app.on_message(filters.command(["activev", "activevideo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & SUDOERS)
 async def activevi_(_, message: Message):
-    mystic = await message.reply_text("» ɢᴇᴛᴛɪɴɢ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ʟɪsᴛ...")
+    mystic = await message.reply_text("» دریافت لیست چت های صوتی فعال...")
     served_chats = await get_active_video_chats()
     text = ""
     j = 0
@@ -81,16 +81,16 @@ async def activevi_(_, message: Message):
                 text += f"<b>{j + 1}.</b> <a href=https://t.me/{user}>{unidecode(title).upper()}</a> [<code>{x}</code>]\n"
             else:
                 text += f"<b>{j + 1}.</b> {unidecode(title).upper()} [<code>{x}</code>]\n"
-            button_text = f"๏ ᴊᴏɪɴ {ordinal(j + 1)} ɢʀᴏᴜᴘ ๏"
+            button_text = f"๏ ᴊᴏɪɴ {ordinal(j + 1)} گروه ๏"
             buttons.append([InlineKeyboardButton(button_text, url=invite_link)])
             j += 1
         except:
             continue
     if not text:
-        await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+        await mystic.edit_text(f"» هیچ چت ویدیویی فعالی روشن نیست {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs :</b>\n\n{text}",
+            f"<b>» لیست چت های ویدیویی فعال در حال حاضر :</b>\n\n{text}",
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
         )
@@ -98,4 +98,4 @@ async def activevi_(_, message: Message):
 async def start(client: Client, message: Message):
     ac_audio = str(len(await get_active_chats()))
     ac_video = str(len(await get_active_video_chats()))
-    await message.reply_text(f"✫ <b><u>ᴀᴄᴛɪᴠᴇ ᴄʜᴀᴛs ɪɴғᴏ</u></b> :\n\nᴠᴏɪᴄᴇ : {ac_audio}\nᴠɪᴅᴇᴏ  : {ac_video}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('✯ ᴄʟᴏsᴇ ✯', callback_data=f"close")]]))
+    await message.reply_text(f"✫ <b><u>اطلاعات چت های فعال</u></b> :\n\nصوتی : {ac_audio}\nویدیو  : {ac_video}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('✯ بسته ✯', callback_data=f"close")]]))
