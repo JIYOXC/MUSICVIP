@@ -42,7 +42,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/FullMusicKingbot")
                 ]
             ]
         ),
@@ -60,7 +60,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/FullMusicKingbot")
                 ]
             ]
         ),
@@ -77,7 +77,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/FullMusicKingbot")
                 ]
             ]
         ),
@@ -103,7 +103,7 @@ import time
 async def add_all(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
-        await message.reply("**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @TG_VC_BOT`**")
+        await message.reply("**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @FullMusicKingbot`**")
         return
     
     bot_username = command_parts[1]
