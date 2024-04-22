@@ -72,7 +72,7 @@ async def play_commnd(
         user_command_count[user_id] = user_command_count.get(user_id, 0) + 1
         if user_command_count[user_id] > SPAM_THRESHOLD:
             # Block the user if they exceed the threshold
-            hu = await message.reply_text(f"**{message.from_user.mention} ᴘʟᴇᴀsᴇ ᴅᴏɴᴛ ᴅᴏ sᴘᴀᴍ, ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 5 sᴇᴄ**")
+            hu = await message.reply_text(f"**{message.from_user.mention} لطفا اسپم نکنید و بعد از چند ثانیه امتحان بکنید**")
             await asyncio.sleep(3)
             await hu.delete()
             return 
@@ -228,7 +228,7 @@ async def play_commnd(
                         cap = _["play_10"].format(details["title"], details["duration_min"])
                         await queue_video_for_playback(video_url, details, track_id, streamtype, img, cap)
                         
-                    await mystic.edit_text("All videos from the channel have been added to the queue.")
+                    await mystic.edit_text("تمامی ویدیوهای کانال به صف اضافه شد")
                 except Exception as e:
                     print(e)  # Handle or log the error appropriately
                     await mystic.edit_text(_["play_3"])  # Error message for the user
@@ -249,7 +249,7 @@ async def play_commnd(
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
                 return await mystic.edit_text(
-                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
+                    "» Spotify هنوز پشتیبانی نمی شود.\n\nلطفا بعدا امتحان بکنید."
                 )
             if "track" in url:
                 try:
@@ -479,7 +479,7 @@ async def play_commnd(
                     ),
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                return await play_logs(message, streamtype=f"Searched on Youtube")
+                return await play_logs(message, streamtype=f"جستجو در یوتیوب")
             else:
                 buttons = track_markup(
                     _,
@@ -494,7 +494,7 @@ async def play_commnd(
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                return await play_logs(message, streamtype=f"URL Searched Inline")
+                return await play_logs(message, streamtype=f"URL به صورت درون خطی جستجو شد")
 
 
 @app.on_callback_query(filters.regex("MusicStream") & ~BANNED_USERS)
@@ -571,7 +571,7 @@ async def play_music(client, CallbackQuery, _):
 async def VIPmous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
+            "» به حساب کاربری برگردید :\n\nتنظیمات گروه خود را باز کنید.\n-> مدیران\n-> روی نام خود کلیک کنید\n-> تیک مجوزهای مدیر ناشناس را بردارید",
             show_alert=True,
         )
     except:
