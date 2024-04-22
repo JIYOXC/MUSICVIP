@@ -26,17 +26,17 @@ async def join_watcher(_, message):
         for members in message.new_chat_members:
             if members.id == app.id:
                 count = await app.get_chat_members_count(chat.id)
-                username = message.chat.username if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
+                username = message.chat.username if message.chat.username else "گروه خصوصی"
                 msg = (
-                    f"**📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
-                    f"**📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:** {message.chat.title}\n"
-                    f"**🍂𝐂ʜᴀᴛ 𝐈ᴅ:** {message.chat.id}\n"
-                    f"**🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{username}\n"
-                    f"**📈𝐆ʀᴏᴜᴘ 𝐌ᴇᴍʙᴇʀs:** {count}\n"
-                    f"**🤔𝐀ᴅᴅᴇᴅ 𝐁ʏ:** {message.from_user.mention}"
+                    f"**📝ربات موسیقی در یک #گروه_جدید اضافه شد**\n\n"
+                    f"**📌نام چت:** {message.chat.title}\n"
+                    f"**🍂چت ایدی:** {message.chat.id}\n"
+                    f"**🔐نام کاربری چت:** @{username}\n"
+                    f"**📈کاربران گروه:** {count}\n"
+                    f"**🤔ادد شده توسط:** {message.from_user.mention}"
                 )
                 await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"😍𝐀ᴅᴅᴇᴅ 𝐁ʏ😍", url=f"tg://openmessage?user_id={message.from_user.id}")]
+                [InlineKeyboardButton(f"😍ادد شده توسط😍", url=f"tg://openmessage?user_id={message.from_user.id}")]
              ]))
                 await userbot.join_chat(f"{username}")
     except Exception as e:
