@@ -27,7 +27,7 @@ def AdminRightsCheck(mystic):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    text=f"{app.mention} تحت تعمیر است، بازدید کنید <a href={SUPPORT_CHAT}>پشتیبانی چت</a> برای دانستن دلیل.",
                     disable_web_page_preview=True,
                 )
 
@@ -46,7 +46,7 @@ def AdminRightsCheck(mystic):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ғɪx ?",
+                            text="کی درست میشه ؟",
                             callback_data="VIPmousAdmin",
                         ),
                     ]
@@ -77,9 +77,9 @@ def AdminRightsCheck(mystic):
                             upvote = await get_upvote_count(chat_id)
                             text = f"""<b>ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɴᴇᴇᴅᴇᴅ</b>
 
-ʀᴇғʀᴇsʜ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ : /reload
+رفرش کش ادمین از طریق : /reload
 
-» {upvote} ᴠᴏᴛᴇs ɴᴇᴇᴅᴇᴅ ғᴏʀ ᴘᴇʀғᴏʀᴍɪɴɢ ᴛʜɪs ᴀᴄᴛɪᴏɴ."""
+» {upvote} رای لازم برای انجام این عمل."""
 
                             command = message.command[0]
                             if command[0] == "c":
@@ -91,7 +91,7 @@ def AdminRightsCheck(mystic):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            text="ᴠᴏᴛᴇ",
+                                            text="رای",
                                             callback_data=f"ADMIN  UpVote|{chat_id}_{MODE}",
                                         ),
                                     ]
@@ -123,7 +123,7 @@ def AdminActual(mystic):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    text=f"{app.mention} تحت تعمیر است، بازدید کنید, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>پشتیبانی چت</a> برای دانستن دلیل.",
                     disable_web_page_preview=True,
                 )
 
@@ -142,7 +142,7 @@ def AdminActual(mystic):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ғɪx ?",
+                            text="کی درست میشه ؟",
                             callback_data="VIPmousAdmin",
                         ),
                     ]
@@ -168,7 +168,7 @@ def ActualAdminCB(mystic):
         if await is_maintenance() is False:
             if CallbackQuery.from_user.id not in SUDOERS:
                 return await CallbackQuery.answer(
-                    f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    f"{app.mention} تحت تعمیر است، برای دانستن دلیل به چت پشتیبانی مراجعه کنید",
                     show_alert=True,
                 )
         try:
