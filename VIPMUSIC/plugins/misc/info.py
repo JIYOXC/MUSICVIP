@@ -84,7 +84,7 @@ font_path = "VIPMUSIC/assets/hiroko.ttf"
 
 INFO_TEXT = """**
 ❅─────✧❅✦❅✧─────❅
-            ✦ ᴜsᴇʀ ɪɴғᴏ ✦
+            ✦ اطلاعات کاربر ✦
 
 ➻ ᴜsᴇʀ ɪᴅ ‣ **`{}`
 **➻ ғɪʀsᴛ ɴᴀᴍᴇ ‣ **{}
@@ -115,7 +115,7 @@ async def userstatus(user_id):
       elif x == enums.UserStatus.ONLINE:
          return "Online."
    except:
-        return "**sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ʜᴀᴘᴘᴇɴᴇᴅ !**"
+        return "**اتفاق اشتباهی افتاد !**"
     
 
 # --------------------------------------------------------------------------------- #
@@ -135,7 +135,7 @@ async def userinfo(_, message):
         user_command_count[user_id] = user_command_count.get(user_id, 0) + 1
         if user_command_count[user_id] > SPAM_THRESHOLD:
             # Block the user if they exceed the threshold
-            hu = await message.reply_text(f"**{message.from_user.mention} ᴘʟᴇᴀsᴇ ᴅᴏɴᴛ ᴅᴏ sᴘᴀᴍ, ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 5 sᴇᴄ**")
+            hu = await message.reply_text(f"**{message.from_user.mention} لطفا اسپم نکنید و بعدا امتحان بکنید**")
             await asyncio.sleep(3)
             await hu.delete()
             return 
