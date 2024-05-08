@@ -39,9 +39,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/musictalk22")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/FullMusicking")
-
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AIUCHANNEL")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AIU_SUPPORT")
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "3000"))
 
@@ -51,10 +50,10 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "2500"))
 AUTO_LEAVING_ASSISTANT = False
 
 #Auto Gcast/Broadcast Handler (True = broadcast on , False = broadcast off During Hosting, Dont Do anything here.)
-AUTO_GCAST = os.getenv("AUTO_GCAST")
+AUTO_GCAST = os.getenv("AUTO_GCAST", "True")
 
 #Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
-AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
+AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "True")
 
 # Get this credentials from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "19609edb1b9f4ed7be0c8c1342039362")
@@ -63,6 +62,9 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "409e31d3ddd64af08cfcc3b
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 2500))
+
+# Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "25"))
 
 
 # Telegram audio and video file size limit (in bytes)
@@ -88,15 +90,6 @@ STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
-
-
-#    __      _______ _____    ___  __ _    _  _____ _____ _____   _____   ____ _______ 
-#    \ \    / /_   _|  __ \   |  \/  | |  | |/ ____|_   _/ ____|  |  _ \ / __ \__   __|
-#     \ \  / /  | | | |__) |  | \  / | |  | | (___   | || |       | |_) | |  | | | |   
-#      \ \/ /   | | |  ___/   | |\/| | |  | |\___ \  | || |       |  _ <| |  | | | |   
-#       \  /   _| |_| |       | |  | | |__| |____) |_| || |____   | |_) | |__| | | |   
-#        \/   |_____|_|       |_|  |_|\____/|_____/|_____\_____|  |____/ \____/  |_|   
-
 
 
 
