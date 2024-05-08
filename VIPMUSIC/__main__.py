@@ -37,11 +37,11 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("VIPMUSIC.plugins" + all_module)
-    LOGGER("VIPMUSIC.plugins").info("همه ویژگی های لود شده عزیزم🥳...")
+    LOGGER("VIPMUSIC.plugins").info("FEATURES CONTAINED MY DEAR 😘")
     await userbot.start()
     await VIP.start()
     await VIP.decorators()
-    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 Music KinG♨️\n╚═════ஜ۩۞۩ஜ════╝"
+    LOGGER("VIPMUSIC").info("۞\n♨️ᴀɪᴜ ✘ ᴍᴜꜱɪᴄ♨️\n۞"
     )
     await idle()
     if len(argv) not in (1, 3, 4):
@@ -51,7 +51,7 @@ async def init():
                 
     await app.stop()
     await userbot.stop()
-    LOGGER("VIPMUSIC").info("                 ╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 Music KinG♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("VIPMUSIC").info("۞\n♨️ᴀɪᴜ ✘ ᴍᴜꜱɪᴄ♨️\n۞")
     
 
 if __name__ == "__main__":
