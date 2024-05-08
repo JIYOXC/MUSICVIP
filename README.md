@@ -26,13 +26,13 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"> 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-[![GIF](https://github.com/THE-VIP-BOY-OP/VIP-MUSIC/blob/main/THE-VIP-BOY-OP.gif)](https://github.com/THE-VIP-BOY-OP)
+[![GIF](https://github.com/JIYOXC/MUSICVIP/blob/main/THE-VIP-BOY-OP.gif)](https://github.com/THE-VIP-BOY-OP)
    
-
 <p align="center">
-  <img src="https://tek.legra.ph/file/7b51adb8645bb87510996.jpg">
+  <img src="https://graph.org/file/ccd05ee751b7ba8cf997d.jpg">
 </p>
 
+[![GIF](https://github.com/JIYOXC/MUSICVIP/blob/main/THE-VIP-BOY-OP.gif)](https://github.com/THE-VIP-BOY-OP)
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
@@ -83,7 +83,5 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 ━━━━━━━━━━━━━━━━━━━━
 ### Contact :
 <a href="https://t.me/DEVAIU"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
-<a href="https://instagram.com/the.vip.boy"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+[![GIF](https://github.com/JIYOXC/MUSICVIP/blob/main/THE-VIP-BOY-OP.gif)](https://github.com/THE-VIP-BOY-OP)
