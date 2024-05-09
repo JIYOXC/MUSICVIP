@@ -26,14 +26,14 @@ HELP_1 = """🙄 🌸Admin commands:
 
  ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
 
- HELP_2 = """😜 🌸Authenticate users:
- Authenticated users can use admin commands without admin rights in your chat.
+HELP_2 = """😜 **<u>🌸احراز هویت کاربران:</u>**
+کاربران معتبر می توانند از دستورات مدیریت بدون حقوق مدیر در چت شما استفاده کنند.
 
- /auth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ Add a user to the group's approval list.
- /unauth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ Remove a user from the group authentication list.
- /authusers » ☀︎︎❥︎ Check the group authentication list.
+/auth  [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ یک کاربر را به لیست تأیید گروه اضافه کنید.
+/unauth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ حذف یک کاربر از لیست احراز هویت گروه.
+/authusers » ☀︎︎❥︎ لیست احراز هویت گروه را بررسی کنید.
 
- ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
+ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
 
  HELP_3 = """Blacklist feature [for sudo only]
  😒 Black list chat:
