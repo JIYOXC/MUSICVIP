@@ -78,7 +78,7 @@ async def start_pm(client, message: Message, _):
             keyboard = first_page(_)
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
-                caption=_["help_1"].format(config.SUPPORT_CHAT),
+                caption=_["help_1"].format(config.SUPPORT_GROUP),
                 reply_markup=keyboard,
             )
         if name[0:3] == "sud":
@@ -221,7 +221,7 @@ async def welcome(client, message: Message):
                         _["start_5"].format(
                             app.mention,
                             f"https://t.me/{app.username}?start=sudolist",
-                            config.SUPPORT_CHAT,
+                            config.SUPPORT_GROUP,
                         ),
                         disable_web_page_preview=True,
                     )
