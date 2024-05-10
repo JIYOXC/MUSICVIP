@@ -4,10 +4,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from AIUXMUSIC import app
-from AIUXMUSIC.misc import SUDOERS
-from AIUXMUSIC.utils.database.memorydatabase import get_video_limit
-from AIUXMUSIC.utils.formatters import convert_bytes
+from VIPMUSIC import app
+from VIPMUSIC.misc import SUDOERS
+from VIPMUSIC.utils.database.memorydatabase import get_video_limit
+from VIPMUSIC.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
