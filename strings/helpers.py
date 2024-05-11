@@ -26,9 +26,9 @@ HELP_1 = """🙄 🌸Admin commands:
 
  ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
 
- HELP_2 = """**<u> User authentication:</u>**
+ HELP_2 = """User authentication:
+ 
 Authenticated users can use admin commands without admin rights in your chat.
-
  /auth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ Add a user to the group's approval list.
  /unauth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ Remove a user from the group authentication list.
  /authusers » ☀︎︎❥︎ Check the group authentication list.
