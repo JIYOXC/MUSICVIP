@@ -6,8 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from VIPMUSIC import app
 from VIPMUSIC.misc import SUDOERS, db
-from VIPMUSIC.utils.database import (
-    get_authuser_names,
+from VIPMUSIC.utils.database import (get_authuser_names,
     get_cmode,
     get_lang,
     get_upvote_count,
