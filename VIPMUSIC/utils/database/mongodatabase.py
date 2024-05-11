@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from AIUXMUSIC.core.mongo import mongodb
+from VIPMUSIC.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats
