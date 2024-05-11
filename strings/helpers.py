@@ -26,15 +26,15 @@ HELP_1 = """🙄 🌸Admin commands:
 
  ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
 
- HELP_2 = """User authentication:
- 
-Authenticated users can use admin commands without admin rights in your chat.
- /auth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ Add a user to the group's approval list.
- /unauth [Ʋsᴇʀɴᴀᴍᴇ] » ☀︎︎❥︎ Remove a user from the group authentication list.
- /authusers » ☀︎︎❥︎ Check the group authentication list.
+ HELP_2 = """
+<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</b></u>
 
- ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
+ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
 
+/auth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
+/unauth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
+/authusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴜᴛʜ ᴜsᴇʀs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.
+"""
  HELP_3 = """Blacklist feature [for sudo only]
  😒 Black list chat:
 
