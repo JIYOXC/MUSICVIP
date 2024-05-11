@@ -1,7 +1,7 @@
 import random
 
-from AIUXMUSIC import userbot
-from AIUXMUSIC.core.mongo import mongodb
+from VIPMUSIC import userbot
+from VIPMUSIC.core.mongo import mongodb
 
 db = mongodb.assistants
 
