@@ -26,16 +26,19 @@ HELP_1 = """🙄 🌸Admin commands:
 
  ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
 
- HELP_2 = """
-<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</b></u>
+ HELP_2 = """<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</b></u>
 
 ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
 
 /auth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
+
 /unauth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
+
 /authusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴜᴛʜ ᴜsᴇʀs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.
-"""
- HELP_3 = """Blacklist feature [for sudo only]
+
+ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
+ 
+HELP_3 = """Blacklist feature [for sudo only]
  😒 Black list chat:
 
  /blacklistchat [ᴄʜᴀᴛ ɪᴅ] » Chat blacklist using bots.
