@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 
 import config
-from strings import command
+from strings import get_command
 from VIPMUSIC import app
 from VIPMUSIC.misc import SUDOERS
 from VIPMUSIC.utils.database.memorydatabase import get_video_limit
