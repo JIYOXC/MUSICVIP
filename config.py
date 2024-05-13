@@ -39,6 +39,9 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
+# Your Github Repo.. Will be shown on /start Command
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/DEVAIU")
+
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AIUCHANNEL")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AIU_SUPPORT")
 # Maximum Limit Allowed for users to save playlists on bot's server
