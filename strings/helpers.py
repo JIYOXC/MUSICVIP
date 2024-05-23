@@ -56,19 +56,13 @@ HELP_3 = """Blacklist feature [for sudo only]
 
  ᴀɪᴜ ダ ʀᴏʙᴏᴛ"""
 
- HELP_4 = """🍒 playability [only for sudo] :
+ HELP_4 = """<u><b>ᴄʜᴀᴛ ʙʟᴀᴄᴋʟɪsᴛ ғᴇᴀᴛᴜʀᴇ :</b></u> [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs]
 
- /broadcast [send a message or reply to a message] » Broadcast a message to the bot's provided chats.
+ʀᴇsᴛʀɪᴄᴛ sʜɪᴛ ᴄʜᴀᴛs ᴛᴏ ᴜsᴇ ᴏᴜʀ ᴘʀᴇᴄɪᴏᴜs ʙᴏᴛ.
 
- play modes:
- -pin » Ping your broadcast messages in provided chats.
- -pinloud » Ping your broadcast message in provided chats and send notifications to members.
- -user » broadcasts the message to the users who started your bot.
- -assistant » Play your message from the bot's assistant account.
- -nobot » forces the bot not to play the message.
-
- ᴇxᴀᴍᴩʟᴇ: /broadcast -user -assistant -pin Test broadcast
-
+/blacklistchat [ᴄʜᴀᴛ ɪᴅ] : ʙʟᴀᴄᴋʟɪsᴛ ᴀ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
+/whitelistchat [ᴄʜᴀᴛ ɪᴅ] : ᴡʜɪᴛᴇʟɪsᴛ ᴛʜᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ.
+/blacklistedchat : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs.
  ᴀɪᴜ ダ ʀᴏʙᴏᴛ
  """
  
